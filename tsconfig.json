@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types/*": ["src/types/*"],
+      "@settings/*": ["src/settings/*"],
+      "@views/*": ["src/views/*"],
+      "@services/*": ["src/services/*"]
+    },
     "inlineSourceMap": true,
     "inlineSources": true,
     "module": "ESNext",

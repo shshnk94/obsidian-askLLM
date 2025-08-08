@@ -5,4 +5,93 @@ available in the app when your plugin is enabled.
 
 If your plugin does not need CSS, delete this file.
 
+
+Chat message styling 
+
 */
+
+.llm-chat-title {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.llm-chat-title-text {
+    color: var(--text-accent);
+    text-align: center;
+}
+.llm-chat-msg {
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid var(--interactive-accent);
+}
+
+.llm-chat-msg-user {
+    background: var(--background-secondary);
+    border-left-color: var(--text-accent);
+}
+
+.llm-chat-msg-assistant {
+    background: var(--background-modifier-form-field);
+    border-left-color: #FFD600; /* Yellow that compliments Obsidian purple */
+}
+
+.llm-chat-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+.llm-chat-content {
+    line-height: 1.5;
+}
+
+.llm-chat-content p {
+    margin: 0.5em 0;
+}
+
+.llm-chat-content code {
+    background: var(--background-modifier-border);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: var(--font-monospace);
+}
+
+.llm-chat-content pre {
+    background: var(--background-modifier-border);
+    padding: 8px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.llm-chat-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 8px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+}
+
+.llm-chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: var(--background-primary);
+    border-radius: 4px;
+    color: var(--text-normal);
+}
+
+.llm-chat-input button {
+    padding: 8px 16px;
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.llm-chat-input button:hover {
+    background: var(--interactive-accent-hover);
+}
