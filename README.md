@@ -1,4 +1,4 @@
-# LLM Assistant - Obsidian Plugin
+# AskLLM - Obsidian Plugin
 
 An Obsidian plugin that integrates Large Language Model (LLM) capabilities directly into your note-taking workflow through an interactive chat interface.
 
