@@ -1,45 +1,56 @@
-# Obsidian Assistant Plugin
+# LLM Assistant - Obsidian Plugin
 
-Obsidian Assistant is a powerful plugin for [Obsidian](https://obsidian.md/) that integrates AI-powered features into your note-taking workflow. It leverages advanced language models to help you generate, summarize, and refactor content within your vault.
+An Obsidian plugin that integrates Large Language Model (LLM) capabilities directly into your note-taking workflow through an interactive chat interface.
 
 ## Features
 
+- **Chat Interface**: Interactive sidebar chat view for conversing with an LLM
+- **Configurable Settings**: Set your API key and customize the LLM persona
+- **Easy Access**: One-click ribbon icon to open the chat interface
+- **Markdown Support**: Full markdown rendering in chat responses
+- **Context Aware**: Can reference your current document and workspace
+
 ## Installation
 
-1. Download or clone this repository into your Obsidian plugins folder:  
-  `YOUR_VAULT/.obsidian/plugins/obsidian-assistant/`
-2. Restart Obsidian.
-3. Enable "Obsidian Assistant" in the Community Plugins settings.
-
-## Usage
-
-- Open the command palette (`Cmd/Ctrl + P`) and search for "Assistant".
-- Select from available commands, such as:
-  - **Ask Assistant:** Enter a prompt and receive a response.
-  - **Summarize Note:** Get a summary of the current note.
-  - **Generate Content:** Expand on a selected topic or heading.
+1. Download the plugin files to your Obsidian vault's `.obsidian/plugins/obsidian-assistant/` directory
+2. Enable the plugin in Obsidian's Community Plugins settings
+3. Configure your API key in the plugin settings
 
 ## Configuration
 
-Access the plugin settings via `Settings → Community Plugins → Obsidian Assistant`:
+Go to **Settings → Community Plugins → LLM Assistant** to configure:
 
-- **API Key:** Enter your OpenAI or compatible API key.
-- **Model Selection:** Choose the language model (e.g., GPT-3.5, GPT-4).
-- **Prompt Templates:** Customize or add new prompt templates.
+- **API Key**: Your OpenAI/OpenRouter API key
+- **Persona**: Define how the LLM should behave and respond
 
-## Security & Privacy
+## Usage
 
-- Your API key is stored locally and never shared.
-- No note content is sent anywhere except to the configured AI provider.
+1. Click the chat icon (💬) in the ribbon to open the LLM Assistant chat
+2. The chat interface will appear in the right sidebar
+3. Type your questions or requests and press Enter to chat with the LLM
+4. All conversations support full markdown formatting
+
+## Requirements
+
+- Obsidian v0.15.0+
+- Valid API key from OpenAI or compatible service
+
+## Development
+
+This plugin is built with TypeScript and follows a modular architecture:
+
+```
+src/
+├── main.ts              # Plugin entry point
+├── settings/            # Configuration management
+├── views/              # Chat interface
+└── services/           # LLM API integration
+```
 
 ## Contributing
 
-Contributions are welcome! Please open issues or pull requests for bug fixes, features, or documentation improvements.
+Enthusiasts are welcome to open issues for bug reports, feature requests, or suggestions. If you'd like to contribute code, please create a pull request with your proposed changes.
 
 ## License
 
-This project is licensed under the MIT License.
-
----
-
-**Disclaimer:** This plugin is not affiliated with or endorsed by Obsidian or OpenAI.
+MIT
